@@ -1,0 +1,113 @@
+@import "./vars.scss";
+
+.footer {
+    background-color: $blue;
+    &-container {
+        height: 380px;
+    }
+    &-info {
+        padding: 58px;
+    }
+
+    &-text {
+        display: flex;
+        justify-content: center;
+        gap: 109px;
+        color: $white;
+        cursor: pointer;
+    }
+
+    &-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+        color: $white;
+        cursor: pointer;
+    }
+
+    &-subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+
+    &-mailing {
+        display: block;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        margin-bottom: 16px;
+        &_title {
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;
+            margin-bottom: 16px;
+        }
+    }
+
+    &-mail {
+        &_input {
+            display: flex;
+            cursor: pointer;
+        }
+        &_text {
+            padding-left: 32px;
+            width: 509px;
+            height: 56px;
+            color: $white;
+            background: rgba(255, 255, 255, 0.15);
+            border: rgba(255, 255, 255, 0.15);
+            color: $white;
+            cursor: pointer;
+        }
+    }  
+
+    &-btn {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border: $blue;
+        color: $black;
+        background-color: $white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &-btn:hover {
+        border: 1px solid $lightgray;
+        background-color: $gray;
+    }
+
+    &-line {
+        display: block;
+        border: 1px solid #4E4D93;
+        width: 100%;
+        overflow: hidden;
+        margin: 24px 0;
+    } 
+
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 27px;
+        }
+        &_links{
+            width: 24px;
+            height: 24px;
+        }
+        &_links:hover {
+            background-color: $gray;
+        }
+    }
+    
+    &-copyright {
+        font-size: 14px;
+        line-height: 19px;
+        color: $white;
+    }
+}

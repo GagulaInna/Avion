@@ -1,0 +1,148 @@
+@import "./vars.scss";
+
+.container {
+    background-color: $lightgray;
+}
+
+.rustic {
+    padding: 0 auto;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 67px;
+        padding: 50px 0;
+    }
+
+    &-img {
+        width: 546px;
+        height: 600px;
+    }
+
+    &-details {
+        max-width: 522px;
+    }
+
+    &-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 16px;
+    }
+
+    &-price {
+        margin-bottom: 28px;
+    }
+
+    &-subtitle {
+        line-height: 20px;
+        margin-bottom: 14px;
+        font-family: "Clash Display", sans-serif;
+        font-weight: bolder;
+    }
+
+    &-text {
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+
+    &-dimensions {
+        margin-bottom: 24px;
+
+        &_container {
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+                max-width: 324px;
+            }
+        }
+
+        &_details {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_height {
+            font-size: 14px;
+            font-family: "Clash Display", serif;
+            font-weight: bolder;
+        }
+
+        &_line {
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            height: 100%;
+            overflow: auto;
+            margin-top: -44px;
+            margin-left: -50px;
+        }
+    }
+
+    &-quantity {
+        &_title {
+            font-family: "Clash Display", serif;
+            font-weight: bolder;
+            margin-bottom: 12px;
+        }
+
+        &_wrapper {
+            &-number {
+                position: relative;
+                width: 122px;
+            }
+        }
+
+        &_minus {
+            width: 12px;
+            height: 16px;
+            margin-bottom: -36px;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+        &_minus:hover {
+            width: 14px;
+            height: 19px;
+        }
+
+        &_number {
+            text-align: center;
+            padding: 12px 16px;
+            background-color: $white;
+        }
+
+        &_plus {
+            width: 12px;
+            height: 16px;
+            margin-top: -33px;
+            margin-left: 92px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        &_plus:hover {
+            width: 15px;
+            height: 19px;
+        }
+
+        &_btn {
+            color: $white;
+            background-color: $blue;
+            margin-top: 40px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        &_btn:hover {
+            background-color: $gray;
+        }
+    }
+}
+
+.line {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow: hidden;
+    margin: 17px 0;
+    margin-bottom: 24px;
+}

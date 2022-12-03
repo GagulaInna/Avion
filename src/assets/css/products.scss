@@ -1,0 +1,165 @@
+@import "./vars.scss";
+
+.products {
+
+    &-title {
+        text-align: center;
+        margin-bottom: 54px;
+    }
+
+    &-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &-btns {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 67px 0 24px;
+    }
+
+    &-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-categories {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    &-category {
+        font-size: 12px;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    &-item {
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+
+        img {
+            max-width: 100%;
+            height: 400px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+            height: 70px;
+            overflow-y: scroll;
+        }
+
+        div {
+            font-weight: 700;
+        }
+    }
+
+    &-more {
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+.product {
+    &-item {
+        display: flex;
+        gap: 60px;
+        border: 1px solid black;
+        padding: 30px;
+        align-items: center;
+
+    }
+
+    &-image {
+        max-width: 30%;
+        height: 500px;
+    }
+
+    &-info {
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h4 {
+            font-size: 20px;
+            color:$gray;
+        }
+    }
+
+}
+
+.hero3 {
+    &-container {
+        height: 614px;
+    }
+
+    &-wrapper {
+        margin: 20px 0;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    &-products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 48px;
+
+        &_card {
+            cursor: pointer;
+        }
+
+        &_card-img:hover {
+            transition: 0.3s;
+            box-shadow: -10px 5px 5px $gray;
+        }
+
+        &_title {
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        &_btn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    &-btn:hover {
+        color: $white;
+        background-color: $gray;
+    }
+}

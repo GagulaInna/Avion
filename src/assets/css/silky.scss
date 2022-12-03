@@ -1,0 +1,90 @@
+@import "./vars.scss";
+
+.container {
+    background-color: $lightgray;
+}
+
+.silky {
+    padding: 0 auto ;
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 67px;
+        padding: 50px 0;
+    }
+
+    &-img {
+        width: 500px;
+        height: 554px;
+    }
+    &-details {
+        max-width: 522px;
+    }
+
+    &-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 16px;
+    }
+
+    &-price {
+        margin-bottom: 28px;
+    }
+
+    &-subtitle {
+        line-height: 20px;
+        margin-bottom: 14px;
+        font-family: "Clash Display", sans-serif;
+        font-weight: bolder;
+    }
+
+    &-text {
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+
+    &-dimensions {
+        margin-bottom: 24px;
+        &_container {
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+                max-width: 324px;
+            }
+        }
+
+        &_details {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_height {
+            font-size: 14px;
+            font-family: "Clash Display", serif;
+            font-weight: bolder;
+        }
+
+        &_line {
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            height: 100%;
+            overflow: auto;
+            margin-top: -44px;
+            margin-left: -50px;
+        }
+
+        &_quantitity {
+            font-family: "Clash Display", serif;
+            font-weight: bolder;
+        }
+    }
+}
+
+.line {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow: hidden;
+    margin: 17px 0;
+    margin-bottom: 24px;
+}

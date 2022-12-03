@@ -1,0 +1,70 @@
+@import "./vars.scss";
+
+.header {
+  padding: 20px;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    position: relative;
+  }
+
+  &-search {
+    cursor: pointer;
+  }
+
+  &-cart {
+    &_active {
+      width: 12px;
+      height: 12px;
+      background-color: $white;
+      border: 1px solid $blue;
+      border-radius: 50%;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      color: $blue;
+      position: absolute;
+      top: -1px;
+      right: 25px;
+    }
+  }
+
+  &-basket_user {
+    display: flex;
+    justify-content: flex-end;
+    gap: 17px;
+    cursor: pointer;
+  }
+}
+
+.line {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: hidden;
+  margin: 17px 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  &_item-link {
+    color: $black;
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  &_item-link:hover {
+    font-weight: bolder;
+  }
+}

@@ -12,6 +12,7 @@ import ChairDetails from "./modules/main/components/products/Chair-details.vue";
 import RusticDetails from "./modules/main/components/products/Rustic-details.vue";
 import SilkyDetails from "./modules/main/components/products/Silky-details.vue";
 import LampDetails from "./modules/main/components/products/Lamp-details.vue";
+import Basket from "./modules/basket/Basket-details.vue";
 
 export default new VueRouter({
   mode: "history",
@@ -60,6 +61,11 @@ export default new VueRouter({
       path: "/lamp-details/",
       name: "lamp-details",
       component: LampDetails,
+    },
+    {
+      path: "/basket",
+      name: "basket",
+      component: Basket,
     },
   ],
 });

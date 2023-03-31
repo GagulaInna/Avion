@@ -15,7 +15,7 @@
 
     &-img {
         width: 546px;
-        height: 610px;
+        height: 620px;
     }
 
     &-details {
@@ -47,10 +47,9 @@
     &-dimensions {
         margin-bottom: 24px;
         &_container {
-            margin-bottom: 12px;
             &-wrapper {
                 display: flex;
-                justify-content:space-between; 
+                justify-content: space-between; 
                 max-width: 324px;
                 margin-bottom: 30px;              
             }
@@ -73,8 +72,7 @@
             height: 100%;
             overflow: auto;
             margin-top: -44px;
-            margin-left: -50px;
-            
+            margin-left: -50px;   
         }
     }
 
@@ -128,7 +126,7 @@
         &_btn {
             color: $white;
             background-color: $blue;
-            margin-top: 40px;
+            margin-top: 50px;
             cursor: pointer;
             transition: 0.5s;
         }
@@ -146,4 +144,83 @@
     overflow: hidden;
     margin: 17px 0;
     margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 390px) {
+    .container {
+        background-color: $white;
+    }
+    
+    .chair {
+        &-wrapper {
+            flex-wrap: wrap;
+            gap: 28px;
+            padding: 10px 0;
+        }
+    
+        &-img {
+            width: 390px;
+            height: 380px;
+        }
+    
+        &-details {
+            padding: 0 24px ;
+            max-width: 522px;
+        }
+    
+        &-title {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+    
+        &-price {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    
+        &-subtitle {
+            margin-bottom: 12px;
+        }
+    
+        &-text {
+            margin-bottom: 28pxpx;
+        }
+    
+        &-dimensions {
+            margin-bottom: 24px;
+            &_container {
+                &-wrapper {
+                    margin-bottom: 28px;              
+                }
+            }
+    
+        }
+    
+        &-quantity {
+            &_title {
+                margin-bottom: 8px;
+            }
+    
+            &_wrapper {
+                &-number {
+                    width: 342px;
+                }
+            }
+
+            &_number {
+                background-color: $lightgray;
+            }
+    
+            &_plus {
+                margin-left: 315px;
+            }
+    
+            &_btn {
+                padding: 16px 32px;
+                margin-top: 32px;
+                margin-bottom: 50px;
+            }
+        }
+    }
 }

@@ -17,7 +17,7 @@
       <div class="hero2">
         <div class="container hero2-container">
           <div class="hero2-wrapper">
-            <h2>What makes our brand different</h2>
+            <h2 class="hero2-wrapper_title">What makes our brand different</h2>
             <div class="hero2-advantage">
               <div class="hero2-advantage_border">
                 <div class="hero2-advantage_border-info">
@@ -29,44 +29,35 @@
                     Order before 3pm and get your order the next day as standard
                   </p>
                 </div>
-                <div class="hero2-advantage_border">
-                  <div class="hero2-advantage_border-info">
-                    <img
-                      src="../../assets/icons/Checkmark--outline.svg"
-                      alt=""
-                    />
-                    <h3 class="hero2-advantage_border-title">
-                      Made by true artisans
-                    </h3>
-                    <p class="hero2-advantage_border-text">
-                      Handmade crafted goods made with real passion and
-                      craftmanship
-                    </p>
-                  </div>
+                <div class="hero2-advantage_border-info">
+                  <img src="../../assets/icons/Checkmark--outline.svg" alt="" />
+                  <h3 class="hero2-advantage_border-title">
+                    Made by true artisans
+                  </h3>
+                  <p class="hero2-advantage_border-text">
+                    Handmade crafted goods made with real passion and
+                    craftmanship
+                  </p>
                 </div>
-                <div class="advantage_border">
-                  <div class="hero2-advantage_border-info">
-                    <img src="../../assets/icons/Purchase.svg" alt="" />
-                    <h3 class="hero2-advantage_border-title">
-                      Unbeatable prices
-                    </h3>
-                    <p class="hero2-advantage_border-text">
-                      For our materials and quality you won't find better prices
-                      anywhere
-                    </p>
-                  </div>
+                <div class="hero2-advantage_border-info">
+                  <img src="../../assets/icons/Purchase.svg" alt="" />
+                  <h3 class="hero2-advantage_border-title">
+                    Unbeatable prices
+                  </h3>
+                  <p class="hero2-advantage_border-text">
+                    For our materials and quality you won't find better prices
+                    anywhere
+                  </p>
                 </div>
-                <div class="hero2-advantage_border">
-                  <div class="hero2-advantage_border-info">
-                    <img src="../../assets/icons/Sprout.svg" alt="" />
-                    <h3 class="hero2-advantage_border-title">
-                      Recycled packaging
-                    </h3>
-                    <p class="hero2-advantage_border-text">
-                      We use 100% recycled to ensure our footprint is more
-                      manageable
-                    </p>
-                  </div>
+                <div class="hero2-advantage_border-info">
+                  <img src="../../assets/icons/Sprout.svg" alt="" />
+                  <h3 class="hero2-advantage_border-title">
+                    Recycled packaging
+                  </h3>
+                  <p class="hero2-advantage_border-text">
+                    We use 100% recycled to ensure our footprint is more
+                    manageable
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,7 +138,11 @@
                 </div>
               </div>
               <div class="hero4-idea_img">
-                <img src="../../assets/images/Image-block.jpg" alt="" />
+                <img
+                  class="hero4-idea_img"
+                  src="../../assets/images/Image-block.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -166,7 +161,6 @@
                   </h2>
                   <h3 class="hero5-benefits_subtitle">
                     Sign up for our newsletter and receive exclusive offers on
-                    <br />
                     new ranges, sales, pop up stores and more
                   </h3>
                   <div class="hero5-benefits_menu">
@@ -221,5 +215,6 @@ export default {};
 
 <style lang="scss" scoped>
 @import "../../assets/css/main.scss";
+@import "../../assets/css/about.scss";
 @import "../../assets/css/footer.scss";
 </style>

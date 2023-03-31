@@ -14,8 +14,8 @@
     }
 
     &-img {
-        width: 500px;
-        height: 554px;
+        width: 546px;
+        height: 620px;
     }
     &-details {
         max-width: 522px;
@@ -50,6 +50,7 @@
                 display: flex;
                 justify-content: space-between;
                 max-width: 324px;
+                margin-bottom: 30px;    
             }
         }
 
@@ -78,6 +79,66 @@
             font-weight: bolder;
         }
     }
+
+    &-quantity {
+        &_title {
+            font-family: "Clash Display", serif;
+            font-weight: bolder;
+            margin-bottom: 12px;
+        }
+
+        &_wrapper {
+            &-number {
+                position: relative;
+                width: 122px;
+            }
+        }
+
+        &_minus {
+            width: 12px;
+            height: 16px;
+            margin-bottom: -36px;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+        &_minus:hover {
+            width: 14px;
+            height: 19px;
+        }
+
+        &_number {
+            text-align: center;
+            padding: 12px 16px;
+            background-color: $white;
+        }
+
+        &_plus {
+            width: 12px;
+            height: 16px;
+            margin-top: -33px;
+            margin-left: 92px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        &_plus:hover {
+            width: 15px;
+            height: 19px;
+        }
+
+        &_btn {
+            color: $white;
+            background-color: $blue;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        &_btn:hover {
+            background-color: $gray;
+        }
+    }
 }
 
 .line {
@@ -87,4 +148,82 @@
     overflow: hidden;
     margin: 17px 0;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        background-color: $white;
+    }
+    
+    .silky {
+        &-wrapper {
+            flex-wrap: wrap;
+            gap: 28px;
+            padding: 10px 0;
+        }
+    
+        &-img {
+            width: 390px;
+            height: 380px;
+        }
+    
+        &-details {
+            padding: 0 24px ;
+            max-width: 522px;
+        }
+    
+        &-title {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+    
+        &-price {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    
+        &-subtitle {
+            margin-bottom: 12px;
+        }
+    
+        &-text {
+            margin-bottom: 28pxpx;
+        }
+    
+        &-dimensions {
+            margin-bottom: 24px;
+            &_container {
+                &-wrapper {
+                    margin-bottom: 28px;              
+                }
+            }
+    
+        }
+    
+        &-quantity {
+            &_title {
+                margin-bottom: 8px;
+            }
+    
+            &_wrapper {
+                &-number {
+                    width: 342px;
+                }
+            }
+
+            &_number {
+                background-color: $lightgray;
+            }
+    
+            &_plus {
+                margin-left: 295px;
+            }
+    
+            &_btn {
+                padding: 16px 32px;
+                margin-top: 32px;
+                margin-bottom: 50px;
+            }
+        }
+    }
 }

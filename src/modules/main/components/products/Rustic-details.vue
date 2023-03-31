@@ -13,31 +13,30 @@
           <div class="line"></div>
           <p class="rustic-subtitle">Product description</p>
           <p class="rustic-text">
-            Rustic Vase Set is beautifully pale shade of terracotta. Gone are
-            the usual orange tones and using traditional methods we have instead
-            a beautiful pale patina reminiscent of vintage pieces which have
-            been left to weather for years in the mediterranean sun.
+            Rustic Vase Set is beautifully pale shade of terracotta.We have
+            instead a beautiful pale patina reminiscent of vintage pieces which
+            have been left to weather for years in the mediterranean sun.
           </p>
           <p class="rustic-dimensions">Dimensions</p>
           <div class="rustic-dimesions_container">
             <div class="rustic-dimensions_container-wrapper">
               <div class="rustic-dimensions_details">
                 <p class="rustic-dimensions_height">Height</p>
-                <p>110cm</p>
+                <p>30cm</p>
               </div>
               <div class="rustic-dimensions_details">
                 <p class="rustic-dimensions_height">Width</p>
-                <p>75cm</p>
+                <p>35cm</p>
                 <div class="rustic-dimensions_line"></div>
               </div>
               <div class="rustic-dimensions_details">
                 <p class="rustic-dimensions_height">Depth</p>
-                <p>50cm</p>
+                <p>-</p>
                 <div class="rustic-dimensions_line"></div>
               </div>
             </div>
             <div class="rustic-quantity_container">
-              <p class="rustic-dimensions_quantitity">Quantitity</p>
+              <p class="rustic-dimensions_quantity">Quantity</p>
               <div class="rustic-dimensions_container-wrapper">
                 <div class="rustic-quantity_wrapper-number">
                   <img
@@ -48,7 +47,7 @@
                   />
                   <p class="rustic-quantity_number">{{ cart }}</p>
                   <img
-                    @click="addToCart()"
+                    @click="plusToCart()"
                     class="rustic-quantity_plus"
                     src="../../../../assets/icons/+.svg"
                     alt=""
@@ -75,11 +74,20 @@ export default {
   methods: {
     addToCart() {
       fetch("http://localhost:3000/header");
-      this.cart += 1;
     },
     minusToCart() {
       fetch("http://localhost:3000/header");
       this.cart -= 1;
+    },
+    plusToCart() {
+      fetch("http://localhost:3000/header");
+      this.cart += 1;
+    },
+  },
+
+  computed: {
+    getBasket() {
+      return this.$store.getters.getBasket;
     },
   },
 };

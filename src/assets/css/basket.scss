@@ -1,0 +1,21 @@
+@import "./vars.scss";
+
+.basket {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .basket {
+        &-container {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 24px;
+            gap: 16px;
+            margin-bottom: 50px;
+        }
+    }
+}

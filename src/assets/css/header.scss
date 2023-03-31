@@ -1,5 +1,9 @@
 @import "./vars.scss";
 
+.container {
+  background-color: $white;
+}
+
 .header {
   padding: 20px;
   &-wrapper {
@@ -66,5 +70,32 @@
   }
   &_item-link:hover {
     font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
+  .header {
+    padding: 5px;
+
+    &-wrapper {
+      max-width: 390px;
+
+    }
+
+    &-logo {
+      font-size: 18px;
+    }
+  }
+
+  
+.line {
+  margin: 5px 0;
+}
+
+  .nav-menu_item-link {
+    font-size: 14px;
   }
 }

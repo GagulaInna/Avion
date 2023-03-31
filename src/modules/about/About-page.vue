@@ -15,7 +15,11 @@
               </div>
             </div>
             <div class="hero4-idea_img">
-              <img src="../../assets/images/Image-block.jpg" alt="" />
+              <img
+                class="hero4-idea_img"
+                src="../../assets/images/Image-block.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -84,4 +88,5 @@ export default {};
 
 <style lang="scss" scoped>
 @import "../../assets/css/main.scss";
+@import "../../assets/css/about.scss";
 </style>

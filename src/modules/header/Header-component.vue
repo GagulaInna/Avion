@@ -8,13 +8,12 @@
             src="../../assets/icons/Search.svg"
             alt=""
           />
-          <div class="header-cart_active">
-            {{ cart }}
-          </div>
+          <div class="header-cart_active"></div>
           <router-link to="/">Avion</router-link>
           <div class="header-basket_user">
             <router-link to="/basket" class="nav-menu_item-link">
               <img src="../../assets/icons/Shopping--cart.svg" alt="" />
+              <p>{{ cart }}</p>
             </router-link>
 
             <img src="../../assets/icons/User-avatar.svg" alt="" />
@@ -57,7 +56,6 @@ export default {
   methods: {
     addToCart() {
       fetch("http://localhost:3000/header");
-      this.cart += 1;
     },
   },
 

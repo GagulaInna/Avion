@@ -48,7 +48,7 @@
                   />
                   <p class="chair-quantity_number">{{ cart }}</p>
                   <img
-                    @click="addToCart()"
+                    @click="plusToCart()"
                     class="chair-quantity_plus"
                     src="../../../../assets/icons/+.svg"
                     alt=""
@@ -75,11 +75,20 @@ export default {
   methods: {
     addToCart() {
       fetch("http://localhost:3000/header");
-      this.cart += 1;
     },
     minusToCart() {
       fetch("http://localhost:3000/header");
       this.cart -= 1;
+    },
+    plusToCart() {
+      fetch("http://localhost:3000/header");
+      this.cart += 1;
+    },
+  },
+
+  computed: {
+    getBasket() {
+      return this.$store.getters.getBasket;
     },
   },
 };

@@ -100,7 +100,6 @@
 .hero3 {
     &-container {
         height: 614px;
-        padding: 0;
     }
 
     &-wrapper {
@@ -151,7 +150,7 @@
 
 .hero4 {
     &-container {
-        height: 538pxpx;
+        height: 538px;
     }
 
     &-wrapper {
@@ -207,6 +206,7 @@
     background-size: cover;
     height: 444px;
     position: relative;
+
     &-container {
         margin-top: 97px 0;
     }
@@ -224,6 +224,7 @@
 
         &_info {
             color: $white;
+
         }
 
         &_title {
@@ -271,6 +272,7 @@
                 line-height: 1.4;
                 color: $white;
             }
+
             &-registration {
                 display: flex;
                 justify-content: center;
@@ -295,8 +297,228 @@
             background-color: $blue;
             transition: 0.5s;
         }
+
         &_btn:hover {
             background-color: $gray;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .hero {
+        background-image: url("../../assets/images/Hero-blocks.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 20vh;
+
+        &-container {
+            height: 190px;
+        }
+
+        &-wrapper {
+            width: 200px;
+            height: 130px;
+            margin: 15px 175px;
+        }
+
+        &-info {
+            padding: 2px 5px;
+        }
+
+        &-title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        &-text {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .hero2 {
+        &-container {
+            height: 780px;
+        }
+
+        &-wrapper {
+            margin: 40px 0;
+
+            &_title {
+                text-align: left;
+                padding: 0 24px;
+                max-width: 274px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+
+        &-advantage {
+            margin: 36px auto;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            &_border {
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0 24px;
+                gap: 22px;
+
+                &-info {
+                    padding: 24px;
+                }
+
+                &-text {
+                    line-height: 1.4;
+                    max-width: 294px;
+                }
+            }
+
+        }
+    }
+
+    .hero3 {
+        &-container {
+            height: 730px;
+        }
+
+        &-wrapper {
+            margin: 20px 0;
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        &-products {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            &_card {
+                &-img {
+                    width: 163px;
+                    height: 201px;
+                }
+            }
+
+            &_title {
+                margin-top: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-btn {
+            padding: 15px 25px;
+        }
+
+    }
+
+    .hero4 {
+        &-container {
+            height: 628px;
+        }
+
+        &-idea {
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0 24px;
+            gap: 24px;
+
+            &_border {
+                width: 342px;
+                height: 281px;
+            }
+
+            &_info {
+                padding: 32px;
+            }
+
+            &_text {
+                font-size: 14px;
+                max-width: 278px;
+                margin-bottom: 50px;
+            }
+
+            &_img {
+                width: 342px;
+                height: 259px;
+            }
+        }
+
+        &-btn {
+            padding: 15px 25px;
+        }
+    }
+
+    .hero5 {
+        height: 360px;
+
+        &-container {
+            margin-top: 24px 0;
+        }
+
+        &-benefits {
+            padding: 24px;
+            text-align: left;
+
+            &_info {
+                max-width: 329px;
+            }
+
+            &_subtitle {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            &_menu {
+                display: block;
+                justify-content: center;
+                gap: 8px;
+                margin-bottom: 28px;
+
+                &-title {
+                    font-size: 14px;
+                }
+
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+
+                &-title {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: $white;
+                }
+
+                &-registration {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 35px;
+                }
+
+
+            }
+
+            &_mail {
+                width: 224px;
+              
+            }
+
+            &_btn {
+                padding: 17px 20px;
+            }
+
         }
     }
 }

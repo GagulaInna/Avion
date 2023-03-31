@@ -1,0 +1,18 @@
+@import "./vars.scss";
+
+@media screen and (max-width: 390px) {
+    .hero4 {
+        &-container {
+            height: 590px;
+            margin-top: -50px;
+        }
+
+        &-idea {
+            &_img {
+                width: 342px;
+                height: 259px;
+            }
+        }
+    }
+
+}
